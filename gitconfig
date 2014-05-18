@@ -25,3 +25,6 @@
   template = ~/.gitmessage
 [fetch]
   prune = true
+[user]
+  email = desilvjo@umich.edu
+  name = John DeSilva
