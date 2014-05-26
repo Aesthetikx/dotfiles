@@ -2,6 +2,8 @@
 " possible, as it has side effects.
 set nocompatible
 
+set t_Co=256
+
 " Leader
 let mapleader = " "
 
