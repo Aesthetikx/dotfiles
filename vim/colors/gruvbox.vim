@@ -400,9 +400,9 @@ call s:HL('lCursor', 'none', 'none', 'inverse')
 
 call s:HL('Special', 'orange')
 if g:gruvbox_italicize_comments == 0
-	call s:HL('Comment', 'dark0', 'dark1')
+	call s:HL('Comment', 'dark0', 'medium')
 else
-	call s:HL('Comment', 'dark0', 'dark1', 'italic')
+	call s:HL('Comment', 'dark0', 'medium', 'italic')
 endif
 call s:HL('Todo', 'fg', 'bg', 'bold')
 call s:HL('Error', 'bg', 'red', 'bold')
@@ -752,9 +752,9 @@ call s:HL('xmlEntityPunct', 'orange')
 " Vim: {{{
 
 if g:gruvbox_italicize_comments == 0
-	call s:HL('vimCommentTitle', 'dark0', 'dark1', 'bold')
+	call s:HL('vimCommentTitle', 'dark0', 'medium', 'bold')
 else
-	call s:HL('vimCommentTitle', 'dark0', 'dark1', 'bold,italic')
+	call s:HL('vimCommentTitle', 'dark0', 'medium', 'bold,italic')
 endif
 call s:HL('vimNotation', 'orange')
 call s:HL('vimBracket', 'orange')
