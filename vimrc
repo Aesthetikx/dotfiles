@@ -147,3 +147,5 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+let g:ctrlp_custom_ignore = { 'file': '\v\.(class)$' }
