@@ -20,6 +20,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'pbrisbin/vim-mkdir'
 Bundle 'scrooloose/syntastic'
 Bundle 'slim-template/vim-slim'
+Bundle 'tfnico/vim-gradle'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-cucumber'
@@ -31,6 +32,7 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/javacomplete'
 Bundle 'vim-scripts/tComment'
+Bundle 'wting/rust.vim'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
