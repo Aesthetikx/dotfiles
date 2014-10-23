@@ -3,7 +3,7 @@ alias tlf="tail -f"
 alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias ...='../..'
-alias l='ls'
+alias l='ls -l'
 alias ll='ls -al'
 alias lh='ls -Alh'
 alias -g G='| grep'
@@ -12,6 +12,7 @@ alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
 alias e="$EDITOR"
 alias v="$VISUAL"
+alias tmux="TERM=xterm-256color tmux"
 
 # git
 alias gci="git pull --rebase && rake && git push"
