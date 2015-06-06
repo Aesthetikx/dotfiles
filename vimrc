@@ -145,11 +145,21 @@ let g:syntastic_check_on_open=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 " ctrlp custom ignores
-let g:ctrlp_custom_ignore = { 'file':'\v\.(class)$' }
+let g:ctrlp_custom_ignore = { 'file': '\v\.(class)$', 'dir': 'bower_components\|node_modules\|tmp' }
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
+set colorcolumn=80
+
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
-let g:ctrlp_custom_ignore = { 'file': '\v\.(class)$' }
+map <Leader>n :NERDTreeToggle<CR>
+let g:ctrlp_map = '<Leader>p'
+let g:ctrlp_by_filename = 1
