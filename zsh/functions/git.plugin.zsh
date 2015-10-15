@@ -60,6 +60,8 @@ alias glg='git log --stat --max-count=10'
 compdef _git glg=git-log
 alias glgg='git log --graph --max-count=10'
 compdef _git glgg=git-log
+alias glggg='git log --oneline --quiet'
+compdef _git glggg=git-log --oneline --quiet
 alias glgga='git log --graph --decorate --all'
 compdef _git glgga=git-log
 alias glo='git log --oneline --decorate --color'
