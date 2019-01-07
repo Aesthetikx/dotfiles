@@ -13,6 +13,14 @@ alias gup='git pull --rebase'
 compdef _git gup=git-fetch
 alias gp='git push'
 compdef _git gp=git-push
+alias gpo='git push origin'
+compdef _git gp=git-push origin
+alias gpom='git push origin master'
+compdef _git gp=git-push origin master
+alias gpfl='git push --force-with-lease'
+compdef _git gp=git-push --force-with-lease
+alias gpflo='git push --force-with-lease origin'
+compdef _git gp=git-push --force-with-lease origin
 alias gd='git diff'
 gdv() { git diff -w "$@" | view - }
 compdef _git gdv=git-diff
@@ -80,6 +88,8 @@ alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
 alias gclean='git reset --hard && git clean -dfx'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+alias gwl='git worktree list'
+compdef _git gwl=git-worktree
 
 #remove the gf alias
 #alias gf='git ls-files | grep'
