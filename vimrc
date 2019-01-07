@@ -163,3 +163,12 @@ endif
 map <Leader>n :NERDTreeToggle<CR>
 let g:ctrlp_map = '<Leader>p'
 let g:ctrlp_by_filename = 1
+
+map j gj
+map k gk
+
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_scss_checkers = ['scss_lint']
+
+hi Normal ctermbg=none
