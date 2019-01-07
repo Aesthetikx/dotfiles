@@ -14,6 +14,7 @@ alias -g ONE="| awk '{ print \$1}'"
 alias e="$EDITOR"
 alias v="$VISUAL"
 alias tmux="TERM=xterm-256color tmux"
+alias ag="ag --pager 'less -R'"
 
 # git
 alias gci="git pull --rebase && rake && git push"
@@ -27,11 +28,16 @@ alias t="ruby -I test"
 alias cuc="bundle exec cucumber"
 
 # Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
+alias migrate="be spring rails db:migrate"
+alias prepare="be spring rails db:test:prepare"
+alias rollback="be spring rails db:rollback"
+alias routes="be spring rails routes"
 alias m="migrate"
 alias rk="rake"
-alias s="rspec"
+alias s="RAILS_ENV=test spring rspec"
 alias z="zeus"
+alias rs="be spring rails s"
+alias rc="be spring rails c"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
