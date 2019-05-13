@@ -1,3 +1,6 @@
+set ANDROID_HOME /opt/android-sdk-update-manager/
+set PATH $HOME/.local/bin $HOME/.rbenv/bin $HOME/.rbenv/shims $ANDROID_HOME/tools/ $ANDROID_HOME/platform-tools/ $HOME/.bin $PATH
+
 set -x BROWSER firefox
 
 abbr -a l ls -l
