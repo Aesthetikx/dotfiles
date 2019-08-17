@@ -45,7 +45,7 @@ unsetopt nomatch
 
 # vi mode
 bindkey -v
-bindkey "^F" vi-cmd-mode
+#bindkey "^F" vi-cmd-mode
 bindkey jj vi-cmd-mode
 
 # handy keybindings
@@ -91,3 +91,13 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 set -o ignoreeof
+
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=7"
+
+bindkey '^F' autosuggest-accept
