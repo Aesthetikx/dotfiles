@@ -1,0 +1,19 @@
+# Unix
+alias ls="ls --color=auto"
+alias l="ls"
+alias v="$VISUAL"
+alias e="$EDITOR"
+
+# Ruby
+alias b="bundle"
+alias be="b exec"
+alias bes="be spring"
+alias besr="bes rails"
+alias migrate="besr db:migrate"
+alias rollback="besr db:rollback"
+alias prepare="besr db:test:prepare"
+alias routes="besr routes"
+alias rc="besr console"
+alias rs="besr server"
+alias bsr="bes rspec"
+alias m="migrate"
