@@ -1,3 +1,6 @@
+# VI Mode
+bindkey -v
+
 # Plugins
 source ~/.zsh/plugins.zsh
 
