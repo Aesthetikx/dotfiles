@@ -13,6 +13,11 @@ source ~/.zsh/plugins.zsh
 # Completion
 source ~/.zsh/completion.zsh
 
+# Colors
+autoload -U colors
+colors
+export CLICOLOR=1
+
 # Rbenv
 eval "$(rbenv init - vim)"
 
