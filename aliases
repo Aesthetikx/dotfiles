@@ -17,3 +17,8 @@ alias rc="besr console"
 alias rs="besr server"
 alias bsr="bes rspec"
 alias m="migrate"
+
+# Git
+alias gdc="git diff --cached"
+alias gpo="git push origin"
+alias gpom="gpo master"
