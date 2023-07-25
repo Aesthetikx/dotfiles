@@ -10,8 +10,12 @@ SAVEHIST=10000
 # Plugins
 source ~/.zsh/plugins.zsh
 
+# Completion
+source ~/.zsh/completion.zsh
+
 # Rbenv
 eval "$(rbenv init - vim)"
+
 
 # Aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
