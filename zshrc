@@ -16,6 +16,9 @@ source ~/.zsh/completion.zsh
 # Rbenv
 eval "$(rbenv init - vim)"
 
+# Editor
+export VISUAL=vim
+export EDITOR=$VISUAL
 
 # Aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
