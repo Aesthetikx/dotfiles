@@ -1,6 +1,12 @@
 # VI Mode
 bindkey -v
 
+# History
+setopt HIST_IGNORE_ALL_DUPS SHARE_HISTORY
+HISTFILE=~/.zhistory
+HISTSIZE=10000
+SAVEHIST=10000
+
 # Plugins
 source ~/.zsh/plugins.zsh
 
