@@ -1,6 +1,6 @@
 # Unix
 alias ls="ls --color=auto"
-alias l="ls"
+alias l="ls -l"
 alias v="$VISUAL"
 alias e="$EDITOR"
 
