@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+# This program can be used as a pipe or with a filename as an argument.
+# It removes color control sequences and displays the results.
+
+regex = /\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]/
+
+ARGF.each do |line|
+  puts line.gsub regex, ''
+end
